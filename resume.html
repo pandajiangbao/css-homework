@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        div.content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: rgb(245, 247, 248);
+        }
+
+        div.head {
+            display: flex;
+            justify-content: space-between;
+            margin: 100px 20% 0 20%;
+        }
+
+        .box1 {
+            display: flex;
+            flex: 1 50%;
+            flex-flow: column;
+        }
+
+        .box2 {
+            display: flex;
+            flex: 2 100%;
+            flex-flow: column;
+        }
+
+        .head_picture {
+            border-radius: 50%;
+            width: 200px;
+            position: relative;
+        }
+
+        p.name {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 15% 0 10px 0;
+        }
+
+        p.intro {
+            font-size: 30px;
+            font-style: italic;
+            color: gray;
+            margin: 10px;
+        }
+        p.detail1 {
+            font-size: 25px;
+            margin-left: 40px; 
+        }
+        p.detail2 {
+            font-size: 18px;
+            margin-left: 80px; 
+        }
+
+        img.icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .title {
+            display: flex;
+            margin: 40px 20px 0 20px;
+        }
+
+        .detail {
+            /* display: flex; */
+            margin: 0 20px 20px 20px;
+            align-content: left;
+        }
+
+        .Bar {
+            position: relative;
+            width: 80%;
+            border: 1px solid rgb(162, 167, 216);
+            padding: 1px;
+        }
+
+        .Bar div {
+            display: block;
+            position: relative;
+            background: rgb(172, 198, 206);
+            height: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div>
+            <p class="name">Panda Jiang</p>
+            <p class="intro">handsome boy</p>
+        </div>
+        <div>
+            <img class="head_picture" src="panda.gif">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="box1">
+            <div class="title">
+                <img class="icon" src="icon1.png">
+                <p>A propos</p>
+            </div>
+            <hr style="width: 98%;">
+            <div class="detail">
+                <p>Cette section vous sert de presentation.</p>
+                <p>Pellentesque nec nisi at saplen asgittis. Aliquam eu
+                    condimentum mauris. Proin accumasn enim at risus hendrerit lobortis.
+                    Nunc sollicitudin sodales lectus, et rhoncus mi molestie hendrerit.
+                </p>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="title">
+                <img class="icon" src="icon2.png">
+                <p>Competences</p>
+            </div>
+            <hr style="width: 98%;">
+            <div class="detail">
+                <p>Competences1</p>
+                <div class="Bar">
+                    <div style="width:70%;"></div>
+                </div>
+                <p>Competences2</p>
+                <div class="Bar">
+                    <div style="width:60%;"></div>
+                </div>
+                <p>Competences3</p>
+                <div class="Bar">
+                    <div style="width:40%;"></div>
+                </div>
+                <p>Competences4</p>
+                <div class="Bar">
+                    <div style="width:90%;"></div>
+                </div>
+                <p>Competences5</p>
+                <div class="Bar">
+                    <div style="width:75%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="title">
+                <img class="icon" src="icon3.png">
+                <p>Experiences</p>
+            </div>
+            <hr style="width: 98%;">
+            <div class="detail">
+                <p class="detail1"><a href="#" style="text-decoration:none">Nom du poste</a> chez nom de l'employeur</p>
+                <p class="detail2">Une petite description du poste, decrivez votre role et vos taches en
+                    queiques mots afin que le recruteur en sache plus sur lanature de votre travail.</p>
+            </div>
+            <div class="detail">
+                <p class="detail1"><a href="#" style="text-decoration:none">Nom du poste</a> chez nom de l'employeur</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
